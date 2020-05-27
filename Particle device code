@@ -1,0 +1,55 @@
+//declare pins
+int ledRed = D3;
+int ledBlue = D4;
+
+
+
+void setup() {
+    pinMode(ledRed, OUTPUT);
+    digitalWrite(ledRed, LOW);
+    
+    pinMode(ledBlue, OUTPUT);
+    digitalWrite(ledBlue, LOW);
+    
+    // exposing the 2 function to the cloud
+    Particle.function("blue", Blue);
+    Particle.function("red", Red);
+    
+}
+
+// function for the blue LED
+int Blue(String test){
+
+    digitalWrite(ledBlue, HIGH);
+    delay(1000);
+    digitalWrite(ledBlue, LOW);
+    delay(1000);
+    digitalWrite(ledBlue, HIGH);
+    delay(1000);
+    digitalWrite(ledBlue, LOW);
+        
+     return 0;
+
+}
+
+// function for the red LED
+int Red(String test){
+    
+    digitalWrite(ledRed, HIGH);
+    delay(1000);
+    digitalWrite(ledRed, LOW);
+    delay(1000);
+    digitalWrite(ledRed, HIGH);
+    delay(1000);
+    digitalWrite(ledRed, LOW);
+        
+    return 0;
+
+}
+
+void loop() {
+
+    
+
+
+}
