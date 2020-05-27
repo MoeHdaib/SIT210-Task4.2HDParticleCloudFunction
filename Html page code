@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <center>
+  <br>
+  <br>
+  <br>
+  <form action="https://api.particle.io/v1/devices/e00fce680bbfa07559164bf6/covidtest?access_token=2dd5c62a9dc511ac7a3f06708aa1ff8c8de3f411" method="POST">
+    Calling a function online for the Blue LED<br>
+    <br>
+    <input type="checkbox" name="arg" value="on">Turn the Blue LED on.
+    <br>
+    
+    <br>
+    <br>
+    <input type="submit" value="Do it!">
+  </form>
+  <form action="https://api.particle.io/v1/devices/e00fce680bbfa07559164bf6/Red?access_token=2dd5c62a9dc511ac7a3f06708aa1ff8c8de3f411" method="POST">
+    Calling a function online for the Red LED<br>
+    <br>
+    <input type="checkbox" name="arg" value="on">Turn the Red LED on.
+    <br>
+    
+    <br>
+    <br>
+    <input type="submit" value="Do it!">
+  </form>
+  </center>
+  </body>
+</html>
